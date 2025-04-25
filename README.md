@@ -2,6 +2,10 @@
 
 Lab demonstrating IS-IS routing between 6 routers using both level 1 and level 2 IS-IS areas. 
 
+## Topology
+<p align="center">
+    <img src="./Images/topology.svg" width="75%">
+</p>
 
 ### Traceroute IPv4 Across Network
 ```
