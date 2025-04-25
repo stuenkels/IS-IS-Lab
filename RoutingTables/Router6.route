@@ -1,0 +1,30 @@
+! IPv4
+
+Gateway of last resort is 30.0.0.1 to network 0.0.0.0
+
+i*L1  0.0.0.0/0 [115/10] via 30.0.0.1, 00:27:08, Serial0/1/0
+      9.0.0.0/24 is subnetted, 1 subnets
+i L1     9.2.0.0 [115/20] via 30.0.0.1, 00:27:49, Serial0/1/0
+      30.0.0.0/8 is variably subnetted, 2 subnets, 2 masks
+C        30.0.0.0/24 is directly connected, Serial0/1/0
+L        30.0.0.2/32 is directly connected, Serial0/1/0
+      33.0.0.0/8 is variably subnetted, 2 subnets, 2 masks
+C        33.0.0.0/24 is directly connected, Loopback0
+L        33.0.0.1/32 is directly connected, Loopback0
+
+! IPv6
+
+I1  ::/0 [115/10]
+     via FE80::52F7:22FF:FE24:65D0, Serial0/1/0
+I1  9:2::/64 [115/20]
+     via FE80::52F7:22FF:FE24:65D0, Serial0/1/0
+C   30::/64 [0/0]
+     via Serial0/1/0, directly connected
+L   30::2/128 [0/0]
+     via Serial0/1/0, receive
+C   33::/64 [0/0]
+     via Loopback0, directly connected
+L   33::1/128 [0/0]
+     via Loopback0, receive
+L   FF00::/8 [0/0]
+     via Null0, receive
